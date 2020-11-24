@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap');
+html,
+body {
+    background-image: url(https://wallpapershome.com/images/wallpapers/far-cry-4-9757x3900-game-open-world-adventure-games-shooter-kyrat-3814.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Podkova', serif;
+    width: 82%;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 500px;
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0 0 10px 5px #0b374b;
+}
+
+.card-header h3 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.input-group-prepend span {
+    width: 125px;
+    background-color: #6b6464da;
+    color: white;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.login_btn {
+    color: white;
+    background-color: #3c84f0;
+    margin-top: 10%;
+}
+
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+    margin: auto auto;
+    width: 200px;
+}
+
+.login_btn:hover {
+    color: white;
+    background-color: #084baf;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.btn-group-vertical>.btn,
+.btn-group>.btn {
+    width: 460px;
+    margin: auto auto;
+    margin-bottom: 7%;
+    height: 50px;
+    font-size: larger;
+}
+
+.dropdown-menu.show {
+    width: 100%;
+    height: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+}

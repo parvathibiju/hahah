@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap');
+html,
+body {
+    background-image: url(https://wallpaperaccess.com/full/970936.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Podkova', serif;
+}
+
+.dropdown-ite {
+    margin-left: 5%;
+    border-bottom: solid 1px lightslategray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.dropdown-ite:last-child {
+    border-bottom: none;
+}
+
+.container {
+    float: right;
+}
+
+#container_l {
+    margin-top: 7.5%;
+    margin-left: -7.5%;
+    height: 550px;
+    overflow: auto;
+    box-shadow: 0 0 10px 5px #0b374b;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+#container_r {
+    margin-top: 7.5%;
+    height: 550px;
+    width: 400px;
+    text-align: center;
+}
+
+.cardl {
+    height: 550px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    /* or */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.card-header {
+    font-size: x-large;
+}
+
+.list-group {
+    background-color: rgba(0, 0, 0, 0.674);
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0.674);
+    border-color: #555;
+    padding-bottom: 0.5%;
+}
+
+.Played {
+    margin-top: 1%;
+}
+
+.Duration p {
+    margin-bottom: -0.7%;
+    margin-top: 2%;
+}
+
+.card {
+    height: 100%;
+    min-height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.674);
+    box-shadow: 0 0 10px 5px #0b374b;
+    color: white
+}
+
+.game-list {
+    margin-top: -3%;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.last-seen {
+    margin-bottom: -10%;
+    margin-top: 3%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #121212
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dropdown-ite a {
+    text-decoration: none;
+}
+
+.fa-trash-alt {
+    float: right;
+    margin-right: 5%;
+}
+
+.fa-check {
+    margin-right: 5%;
+    float: right;
+}
+
+.fa-check:before {
+    color: green
+}
+
+.fa-trash-alt:before {
+    color: red;
+}
+
+.user {
+    padding-left: 780px;
+}

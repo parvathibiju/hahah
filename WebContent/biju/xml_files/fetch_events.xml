@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<events>
+    <each_event>
+        <event_name>Classical Night</event_name>
+        <event_loc>Pandal</event_loc>
+        <event_category>Fun Event</event_category>
+        <event_reg_enddate>2020-11-22</event_reg_enddate>
+        <event_date_time>2020-12-23 18:00:00</event_date_time>
+        <event_desc>A night to honour Indian classical Dance. Come and attend the event and be enthralled by the grace and elegance.</event_desc>
+    </each_event>
+    <each_event>
+        <event_name>Folk Song</event_name>
+        <event_loc>Amriteshwari Hall</event_loc>
+        <event_category>Group of 5</event_category>
+        <event_reg_enddate>2020-11-28</event_reg_enddate>
+        <event_date_time>2020-12-20 16:00:00</event_date_time>
+        <event_desc>Who does not like a little bit of folk songs. All are invited to participate and to attend the event.</event_desc>
+    </each_event>
+    <each_event>
+        <event_name>Mock Parliament</event_name>
+        <event_loc>Amriteshwari Hall</event_loc>
+        <event_category>Pair Activity</event_category>
+        <event_reg_enddate>2020-11-12</event_reg_enddate>
+        <event_date_time>2020-12-05 16:30:00</event_date_time>
+        <event_desc>A fun event to engage the young and budding minds of the campus</event_desc>
+    </each_event>
+    <each_event>
+        <event_name>Pencil Art Workshop</event_name>
+        <event_loc>E-402 ABII</event_loc>
+        <event_category>Workshop</event_category>
+        <event_reg_enddate>2020-12-01</event_reg_enddate>
+        <event_date_time>2020-12-18 16:00:00</event_date_time>
+        <event_desc>A workshop on pencil art,all are welcome. Come with your own supplies.</event_desc>
+    </each_event>
+    <each_event>
+        <event_name>Short Story Comptition</event_name>
+        <event_loc>C-104 ABI</event_loc>
+        <event_category>Individual</event_category>
+        <event_reg_enddate>2020-11-26</event_reg_enddate>
+        <event_date_time>2020-12-15 14:30:00</event_date_time>
+        <event_desc/>
+    </each_event>
+    <each_event>
+        <event_name>Tamil Poetry</event_name>
+        <event_loc>Seminar Hall -II</event_loc>
+        <event_category>Individual</event_category>
+        <event_reg_enddate>2020-11-15</event_reg_enddate>
+        <event_date_time>2020-12-01 15:00:00</event_date_time>
+        <event_desc>A call to awaken the tamil poets..</event_desc>
+    </each_event>
+</events>

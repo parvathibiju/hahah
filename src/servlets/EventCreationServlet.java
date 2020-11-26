@@ -17,7 +17,7 @@ import model.EventCreation;
 /**
  * Servlet implementation class EventCreationServlet
  */
-@WebServlet(name ="EventCreationServlet", urlPatterns ="/home")
+@WebServlet(name ="EventCreationServlet", urlPatterns ="/insertevent")
 public class EventCreationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private EventCreationDAO eventCreationDAO;
@@ -29,8 +29,29 @@ public class EventCreationServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
-		RequestDispatcher dispatcher = request.getRequestDispatcher("./index.jsp");
+		try {
+		int cid = Integer.parseInt(request.getParameter("cid"));
+		String event_name = request.getParameter("event_name");
+		String even_loc = request.getParameter("event_loc");
+		String event_category = request.getParameter("event_category");
+		String event_reg_enddate = request.getParameter("event_reg_enddate");
+		String date = request.getParameter("date");
+		String time = request.getParameter("time");
+		String event_desc = request.getParameter("event_desc");
+		String event_link = request.getParameter("event_link");
+		String event_date_time = date + " " +time ;
+		int max_count = Integer.parseInt(request.getParameter("max_count"));
+		EventCreation newEvent = new EventCreation(cid,event_name, even_loc, event_category,event_reg_enddate,
+										event_date_time, event_desc,event_link,max_count);
+		System.out.println(date + time);
+		eventCreationDAO.insertEvent(newEvent);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/rajesh/profile.jsp");
 		dispatcher.forward(request, response);
+		}
+		catch(Exception ex){
+			throw new ServletException(ex);
+			
+		}
 	}
 
 	/**

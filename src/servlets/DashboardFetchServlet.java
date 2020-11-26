@@ -15,7 +15,7 @@ import dao.DashboardFetchDAO;
 /**
  * Servlet implementation class DashboardFetchServlet
  */
-@WebServlet(name = "DashboardFetchServlet" , urlPatterns = "/")
+@WebServlet(name = "DashboardFetchServlet" , urlPatterns = "/dash")
 public class DashboardFetchServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

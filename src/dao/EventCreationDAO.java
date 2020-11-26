@@ -13,7 +13,7 @@ public class EventCreationDAO {
 	private String jdbcUsername = "root";
 	private String jdbcPassword = "Parvathi";
 
-	private static final String INSERT_EVENT = "INSERT INTO events" + "  (cid, event_name, event_loc, event_category,event_regenddate,event_datetime,event_desc,event_link,max_count) VALUES "
+	private static final String INSERT_EVENT = "INSERT INTO events_" + "  (cid, event_name, event_loc, event_category,event_reg_enddate,event_date_time,event_desc,event_link,max_count) VALUES "
 			+ " (?, ?, ?,?, ?, ?,?, ?, ?);";
 	private static final String SELECT_ALL_EVENTS = "SELECT * from events_";
 //	private static final String SELCET_EVENT_BY_CLUB = "select event_name,event_loc,event_category,event_desc,event_link from users where event_ =?";
@@ -46,13 +46,13 @@ public class EventCreationDAO {
 		try (Connection connection = getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(INSERT_EVENT)) {
 			preparedStatement.setInt(1, user.getCid());
-			preparedStatement.setString(2, user.getEvent_loc());
-			preparedStatement.setString(3, user.getEvent_category());
-			preparedStatement.setString(4, user.getEvent_reg_enddate());
-			preparedStatement.setString(5, user.getEvent_date_time());
-			preparedStatement.setString(6, user.getEvent_desc());
-			preparedStatement.setString(7, user.getEvent_link());
-			preparedStatement.setString(8, user.getEvent_date_time());
+			preparedStatement.setString(2, user.getEvent_name());
+			preparedStatement.setString(3, user.getEvent_loc());
+			preparedStatement.setString(4, user.getEvent_category());
+			preparedStatement.setString(5, user.getEvent_reg_enddate());
+			preparedStatement.setString(6, user.getEvent_date_time());
+			preparedStatement.setString(7, user.getEvent_desc());
+			preparedStatement.setString(8, user.getEvent_link());
 			preparedStatement.setInt(9, user.getMax_count());
 			System.out.println(preparedStatement);
 			preparedStatement.executeUpdate();

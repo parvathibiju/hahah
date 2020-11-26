@@ -32,7 +32,7 @@
         <div class="w3-display-middle">
             <h1 class="w3-jumbo w3-animate-top">Connecting Minds</h1>
             <h1>Looking for Events?</h1>
-            <h1><span class="typed">Visit <a href='P_dashboard.jsp'>Dashboard</a>!!!</span>
+            <h1><span class="typed">Visit <a href='/ncp-proj-trial-1/dash'>Dashboard</a>!!!</span>
             </h1>
         </div>
         <div class="w3-display-bottomleft w3-padding-large">

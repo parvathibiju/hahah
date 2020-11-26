@@ -24,13 +24,13 @@
                 <a class="nav-link" href="../rajesh/profile.html">Home</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../biju/P_create_event.html">Create Event</a>
+                        <a class="nav-link" href="../biju/P_create_event.jsp">Create Event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" href="../tr/requestPage.html">GiveRequest</a>
+                        <a class="navbar-brand" href="../tr/requestPage.jsp">GiveRequest</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../tr/pendingRequest.html">Pending Request</a>
+                        <a class="nav-link" href="../tr/pendingRequest.jsp">Pending Request</a>
                     </li>
 
                 </ul>

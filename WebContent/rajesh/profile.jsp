@@ -21,7 +21,7 @@
                 <a class="navbar-brand" href="../rajesh/profile.jsp">Home</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href=/createEvent>Create Event</a>
+                        <a class="nav-link" href="../biju/P_create_event.jsp">Create Event</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../tr/requestPage.jsp">Give Request</a>

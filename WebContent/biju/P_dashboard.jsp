@@ -29,17 +29,20 @@
                 <p>All the happenings are right here!! Don't miss out.</p>
                 <div id="myBtnContainer">
                     <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('Literature')"> Literature</button>
-                    <button class="btn" onclick="filterSelection('Singing')"> Singing</button>
-                    <button class="btn" onclick="filterSelection('Poetry')"> Poetry</button>
-                    <button class="btn" onclick="filterSelection('Dance')"> Dance</button>
+                    <button class="btn" onclick="filterSelection('6')"> Literature</button>
+                    <button class="btn" onclick="filterSelection('2')"> Singing</button>
+                    <button class="btn" onclick="filterSelection('3')"> Poetry</button>
+                    <button class="btn" onclick="filterSelection('1')"> Dance</button>
+					<button class="btn" onclick="filterSelection('4')"> Art</button>
+					<button class="btn" onclick="filterSelection('5')"> Public Speaking</button>
+					                    
                   </div>
                   
                   
 				<%ArrayList<EventCreation> events = (ArrayList<EventCreation>)request.getAttribute("listEvent"); 
 			    for (EventCreation e:events){
 			    	System.out.println(e.getEvent_desc());%>
-			    	<div class='filterDiv Literature'  style={width:100%}>
+			    	<div class='filterDiv <%=e.getCid()%>'  style={width:100%}>
 	                <div class="panel-wrapper">
 	                    <div class="panel-head">
 	                        News - <%=e.getEvent_name()%>

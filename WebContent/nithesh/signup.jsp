@@ -1,3 +1,10 @@
+<%@page import="dao.SignUpDAO"%>
+<%@page import="servlets.SignUpServelet"%> 
+<%@page import="model.SignUp"%> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,18 +33,18 @@
                     <h3>Sign Up</h3>
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form action="<%= request.getContextPath() %>/signup" method="post">
                         <div class="input-group form-group">
-                            <input type="text" name="fName" class="form-control" placeholder="First Name">
+                            <input type="text" name="fname" class="form-control" placeholder="First Name">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" name="lName" class="form-control" placeholder="Last Name">
+                            <input type="text" name="lname" class="form-control" placeholder="Last Name">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" name="Username" class="form-control" placeholder="Username">
+                            <input type="text" name="uname" class="form-control" placeholder="Username">
                         </div>
                         <div class="input-group form-group">
-                            <input type="text" name="Email-id" id="email" class="form-control" placeholder="Email-id">
+                            <input type="text" name="email_id" id="email" class="form-control" placeholder="Email-id">
                         </div>
                         <div class="input-group form-group">
                             <input type="text" class="form-control" id="cemail" placeholder="Confirm Email-id">
@@ -51,7 +58,7 @@
                                 class="form-control date">
                         </div>
                         <div class="input-group form-group">
-                            <input type="password" id="pass" name="Password" class="form-control"
+                            <input type="password" id="pass" name="passwd" class="form-control"
                                 placeholder="Password">
                         </div>
                         <div class="input-group form-group">

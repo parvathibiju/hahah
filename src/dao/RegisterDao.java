@@ -43,7 +43,7 @@ public class RegisterDao
 		Connection con=getConnection();
 		try
 		{	
-			String sql = "SELECT * FROM events_  WHERE event_reg_enddate < ?";
+			String sql = "SELECT * FROM events_  WHERE event_reg_enddate > ?";
 			PreparedStatement ps=con.prepareStatement(sql);
 			ps.setString(1, java.time.LocalDate.now().toString());
 			System.out.println("$$" + ps);

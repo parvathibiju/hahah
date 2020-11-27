@@ -1,3 +1,10 @@
+<%@page import="dao.LoginDAO"%>
+<%@page import="servlets.LoginServelet"%> 
+<%@page import="model.SignUp"%> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +25,6 @@
 
 <body>
 
-
     <div class="container">
         <div class="d-flex justify-content-center h-100">
             <div class="card">
@@ -26,19 +32,19 @@
                     <h3>Sign In</h3>
                 </div>
                 <div class="card-body">
-                    <form action="../rajesh/profile.jsp" onsubmit="return validate()" method="GET">
+                    <form method="post" action="<%= request.getContextPath() %>/login">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
 
-                            <input type="text" class="form-control" name="Username" placeholder="Username">
+                            <input type="text" class="form-control" name="uname" placeholder="Username">
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" class="form-control" id="pass" name="Password"
+                            <input type="password" class="form-control" id="pass" name="passwd"
                                 placeholder="Password">
                         </div>
                         <div class="row align-items-center remember">
